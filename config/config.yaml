@@ -1,0 +1,121 @@
+ai_pool:
+  concurrency:
+    max_concurrent_calls: 2
+    per_endpoint_limit:
+      http://localhost:11434: 3
+  default_endpoint: http://localhost:11434
+  default_model: qwen2.5:7b
+  instances:
+  - api_key: ''
+    cost_per_1k_tokens: 0.0
+    enabled: true
+    endpoint: http://localhost:11434
+    id: local-ollama-qwen
+    max_context: 8192
+    model: ollama/qwen2.5:7b
+    name: 本地千问7B
+    parameters:
+      max_tokens: 4096
+      temperature: 0.3
+    tags:
+    - general
+    - cheap
+    - fast
+    - python
+  retry:
+    base_delay: 1.0
+    exponential_base: 2.0
+    infinite_retry: true
+    max_delay: 30.0
+    max_retries: -1
+    notify_after: 10
+database:
+  journal_mode: delete
+  timeout: 5.0
+learning:
+  high_end_model_id: deepseek-v4-flash
+  high_end_model_intervention: false
+  idle_trigger_minutes: 30
+  source_whitelist:
+  - https://github.com/trending
+persistence:
+  max_snapshots_per_task: 20
+  snapshot_interval_seconds: 60
+security:
+  code_scanner: bandit
+  local_command_levels:
+    L1_auto_exec: true
+    L2_vote_threshold: 0.5
+    L3_block: true
+  run_mode: local
+  sandbox:
+    cpu_limit: 1.0
+    engine: udocker
+    image: python:3.11-slim
+    memory_limit: 512m
+    network_disabled: false
+  supply_chain_blacklist:
+    npm: []
+    pip: []
+self_update:
+  branch_prefix: self-improve
+  check_interval_hours: 24
+  enabled: true
+  file_blacklist:
+  - config/config.yaml
+  - data/
+  - app/security/
+  - app/core/updater.py
+  - app/core/database.py
+  max_files_per_round: 5
+  repo: ninasukiwww-png/IReckon
+server:
+  host: 0.0.0.0
+  log_level: INFO
+  port: 8000
+system:
+  data_dir: ./data
+  log_level: INFO
+  name: 俺寻思(IReckon)
+  output_dir: ./data/outputs
+  timezone: Asia/Shanghai
+  version: 0.1.0
+task_defaults:
+  agent_call_timeout: 600
+  budget_limit_usd: 1.0
+  default_temperature: 0.88
+  loop_detection_max_rounds: 5
+  loop_similarity_threshold: 0.9
+  max_review_rounds: 14
+  max_task_duration_seconds: 259200
+  max_tool_calls_per_module: 10000
+  monthly_token_warning_threshold: 50000
+  pass_threshold: 0.8
+ui:
+  default_view: styled
+  theme: catgirl
+# 3.0 Feature Configurations
+consciousness:
+  idle_threshold_minutes: 30
+dreams:
+  idle_timeout_minutes: 60
+  token_budget: 2000
+game_engine:
+  allowed_games:
+  - all
+  banned_games: []
+guardian:
+  enabled: true
+  window_size: 10
+minecraft:
+  host: localhost
+  port: 25565
+  username: IReckonBot
+vrchat:
+  osc_host: 127.0.0.1
+  osc_port: 9001
+chess:
+  engine_path: stockfish
+  thinking_time: 1000
+personality:
+  default_character: default
