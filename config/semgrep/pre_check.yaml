@@ -1,0 +1,59 @@
+rules:
+  - id: dangerous-subprocess
+    patterns:
+      - pattern-either:
+          - pattern: subprocess.run(...)
+          - pattern: subprocess.Popen(...)
+          - pattern: subprocess.call(...)
+    message: "使用了 subprocess，注意命令注入风险"
+    languages: [python]
+    severity: WARNING
+
+  - id: dangerous-eval-exec
+    pattern-either:
+      - pattern: eval(...)
+      - pattern: exec(...)
+    message: "使用了 eval/exec，存在代码注入风险"
+    languages: [python]
+    severity: ERROR
+
+  - id: dangerous-os-system
+    pattern: os.system(...)
+    message: "使用了 os.system，存在shell注入风险"
+    languages: [python]
+    severity: WARNING
+
+  - id: dangerous-pickle
+    pattern: pickle.loads(...)
+    message: "Pickle反序列化可能导致RCE"
+    languages: [python]
+    severity: ERROR
+
+  - id: try-except-pass
+    pattern: |
+      try:
+        ...
+      except:
+        pass
+    message: "裸except+pass会静默吞掉所有错误"
+    languages: [python]
+    severity: WARNING
+
+  - id: sql-injection
+    patterns:
+      - pattern-either:
+          - pattern: |
+              cursor.execute($QUERY + ...)
+          - pattern: |
+              cursor.execute(f"...")
+    message: "可能的SQL注入，请用参数化查询"
+    languages: [python]
+    severity: ERROR
+
+  - id: dangerous-request-without-timeout
+    patterns:
+      - pattern: requests.request(...)
+      - pattern-not: requests.request(..., timeout=...)
+    message: "requests 请求未设置 timeout，可能永久挂起"
+    languages: [python]
+    severity: WARNING
