@@ -1,0 +1,22 @@
+{
+  "name": "process",
+  "description": "进程管理 - 跨平台通用",
+  "language": "python",
+  "tags": ["process", "task", "system", "utility", "builtin", "cross-platform"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "action": {"type": "string", "enum": ["list", "kill", "find"], "description": "动作"},
+      "name": {"type": "string", "description": "进程名(PID或名称)"}
+    },
+    "required": ["action"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "success": {"type": "boolean"},
+      "processes": {"type": "array"}
+    }
+  },
+  "created_by": "system"
+}

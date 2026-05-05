@@ -1,0 +1,25 @@
+{
+  "name": "worldmodel",
+  "description": "世界模型 - 因果推理预测",
+  "language": "python",
+  "tags": ["worldmodel", "reasoning", "ai", "builtin"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "action_type": {"type": "string", "description": "动作类型，如 push, pull, move"},
+      "object": {"type": "string", "description": "对象ID"},
+      "force": {"type": "number", "description": "力度"},
+      "position": {"type": "array", "items": {"type": "number"}, "description": "位置 [x,y,z]"}
+    },
+    "required": ["action_type"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "new_state": {"type": "object"},
+      "confidence": {"type": "number"},
+      "reasoning": {"type": "string"}
+    }
+  },
+  "created_by": "system"
+}

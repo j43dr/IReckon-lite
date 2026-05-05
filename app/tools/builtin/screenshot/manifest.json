@@ -1,0 +1,20 @@
+{
+  "name": "screenshot",
+  "description": "屏幕截图",
+  "language": "python",
+  "tags": ["screen", "image", "utility", "builtin"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "save_path": {"type": "string", "description": "保存路径"}
+    }
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "success": {"type": "boolean"},
+      "path": {"type": "string"}
+    }
+  },
+  "created_by": "system"
+}

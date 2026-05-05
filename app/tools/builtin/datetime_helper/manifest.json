@@ -1,0 +1,22 @@
+{
+  "name": "日期时间助手",
+  "description": "提供日期解析、时区转换、时间差计算、格式化输出等功能。",
+  "language": "python",
+  "tags": [
+    "datetime",
+    "time",
+    "utility",
+    "builtin"
+  ],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "action": "string",
+      "params": "object"
+    }
+  },
+  "output_schema": {
+    "type": "any"
+  },
+  "created_by": "system"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "battery",
+  "description": "电池状态 - 跨平台通用",
+  "language": "python",
+  "tags": ["battery", "power", "system", "utility", "builtin", "cross-platform"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "action": {"type": "string", "enum": ["get", "charging"], "description": "动作"}
+    },
+    "required": ["action"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "success": {"type": "boolean"},
+      "level": {"type": "number"},
+      "charging": {"type": "boolean"}
+    }
+  },
+  "created_by": "system"
+}

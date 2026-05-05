@@ -1,0 +1,24 @@
+{
+  "name": "mouse",
+  "description": "鼠标控制",
+  "language": "python",
+  "tags": ["mouse", "control", "utility", "builtin"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "action": {"type": "string", "enum": ["move", "click", "double_click", "right_click", "drag"], "description": "鼠标动作"},
+      "x": {"type": "number", "description": "X坐标"},
+      "y": {"type": "number", "description": "Y坐标"},
+      "button": {"type": "string", "enum": ["left", "right"], "default": "left"}
+    },
+    "required": ["action"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "success": {"type": "boolean"},
+      "action": {"type": "string"}
+    }
+  },
+  "created_by": "system"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "shell",
+  "description": "执行Shell命令",
+  "language": "python",
+  "tags": ["shell", "command", "utility", "builtin"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "command": {"type": "string", "description": "Shell命令"},
+      "timeout": {"type": "number", "default": 30}
+    },
+    "required": ["command"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "stdout": {"type": "string"},
+      "stderr": {"type": "string"},
+      "returncode": {"type": "number"}
+    }
+  },
+  "created_by": "system"
+}

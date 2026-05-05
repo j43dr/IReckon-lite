@@ -1,0 +1,22 @@
+{
+  "name": "camera",
+  "description": "摄像头/相机 - 跨平台通用",
+  "language": "python",
+  "tags": ["camera", "photo", "system", "utility", "builtin", "cross-platform"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "action": {"type": "string", "enum": ["capture", "list"], "description": "动作"},
+      "save_path": {"type": "string", "description": "保存路径"}
+    },
+    "required": ["action"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "success": {"type": "boolean"},
+      "path": {"type": "string"}
+    }
+  },
+  "created_by": "system"
+}

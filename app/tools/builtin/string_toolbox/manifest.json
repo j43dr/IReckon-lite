@@ -1,0 +1,22 @@
+{
+  "name": "字符串工具箱",
+  "description": "字符串编码转换、大小写转换、Base64编解码、URL编解码等。",
+  "language": "python",
+  "tags": [
+    "string",
+    "encoding",
+    "utility",
+    "builtin"
+  ],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "action": "string",
+      "text": "string"
+    }
+  },
+  "output_schema": {
+    "type": "any"
+  },
+  "created_by": "system"
+}

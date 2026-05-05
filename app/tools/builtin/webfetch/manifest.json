@@ -1,0 +1,18 @@
+{
+  "name": "webfetch",
+  "description": "获取网页内容",
+  "language": "python",
+  "tags": ["web", "fetch", "utility", "builtin"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "url": {"type": "string", "description": "网页URL"},
+      "timeout": {"type": "number", "default": 30}
+    },
+    "required": ["url"]
+  },
+  "output_schema": {
+    "type": "string"
+  },
+  "created_by": "system"
+}

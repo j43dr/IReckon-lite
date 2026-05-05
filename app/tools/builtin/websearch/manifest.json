@@ -1,0 +1,26 @@
+{
+  "name": "websearch",
+  "description": "搜索网络获取信息",
+  "language": "python",
+  "tags": ["search", "web", "utility", "builtin"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "query": {"type": "string", "description": "搜索关键词"},
+      "num_results": {"type": "number", "default": 5}
+    },
+    "required": ["query"]
+  },
+  "output_schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "title": {"type": "string"},
+        "url": {"type": "string"},
+        "snippet": {"type": "string"}
+      }
+    }
+  },
+  "created_by": "system"
+}

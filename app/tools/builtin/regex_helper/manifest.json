@@ -1,0 +1,23 @@
+{
+  "name": "正则表达式助手",
+  "description": "正则匹配、替换、分割、提取，支持常见正则语法。",
+  "language": "python",
+  "tags": [
+    "regex",
+    "string",
+    "utility",
+    "builtin"
+  ],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "pattern": "string",
+      "text": "string",
+      "action": "string"
+    }
+  },
+  "output_schema": {
+    "type": "any"
+  },
+  "created_by": "system"
+}

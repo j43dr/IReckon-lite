@@ -1,0 +1,24 @@
+{
+  "name": "network",
+  "description": "网络状态 - 跨平台通用",
+  "language": "python",
+  "tags": ["network", "internet", "system", "utility", "builtin", "cross-platform"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "action": {"type": "string", "enum": ["status", "speed", "ping"], "description": "动作"},
+      "host": {"type": "string", "description": "ping目标"}
+    },
+    "required": ["action"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "success": {"type": "boolean"},
+      "connected": {"type": "boolean"},
+      "type": {"type": "string"},
+      "speed": {"type": "number"}
+    }
+  },
+  "created_by": "system"
+}

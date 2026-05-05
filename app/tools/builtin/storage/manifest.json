@@ -1,0 +1,24 @@
+{
+  "name": "storage",
+  "description": "存储状态 - 跨平台通用",
+  "language": "python",
+  "tags": ["storage", "disk", "system", "utility", "builtin", "cross-platform"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "path": {"type": "string", "description": "路径(默认当前目录)"}
+    },
+    "required": []
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "success": {"type": "boolean"},
+      "total": {"type": "number"},
+      "used": {"type": "number"},
+      "free": {"type": "number"},
+      "percent": {"type": "number"}
+    }
+  },
+  "created_by": "system"
+}

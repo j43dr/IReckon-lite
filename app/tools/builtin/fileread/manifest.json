@@ -1,0 +1,25 @@
+{
+  "name": "fileread",
+  "description": "读取文件内容",
+  "language": "python",
+  "tags": ["file", "io", "utility", "builtin"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "path": {"type": "string", "description": "文件路径"},
+      "offset": {"type": "number", "default": 0},
+      "limit": {"type": "number", "default": 2000}
+    },
+    "required": ["path"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "path": {"type": "string"},
+      "content": {"type": "string"},
+      "total_lines": {"type": "number"},
+      "showing": {"type": "string"}
+    }
+  },
+  "created_by": "system"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "execute_code",
+  "description": "安全执行Python代码",
+  "language": "python",
+  "tags": ["code", "python", "utility", "builtin"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "code": {"type": "string", "description": "Python代码"},
+      "timeout": {"type": "number", "default": 30}
+    },
+    "required": ["code"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "success": {"type": "boolean"},
+      "output": {"type": "string"},
+      "error": {"type": "string"}
+    }
+  },
+  "created_by": "system"
+}
