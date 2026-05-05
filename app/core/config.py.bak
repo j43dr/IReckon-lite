@@ -1,0 +1,4 @@
+from pathlib import Path
+import os
+
+config_manager = Config()
