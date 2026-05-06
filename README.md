@@ -183,4 +183,4 @@ MIT License - 详见 [LICENSE](./LICENSE) 文件
 
 ## 问题反馈
 
-如有问题，请提交 Issue: https://github.com/your-repo/IReckon/issues
+如有问题，请提交 Issue: https://github.com/j43dr/IReckon-lite/issues
