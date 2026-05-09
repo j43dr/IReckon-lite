@@ -1,0 +1,22 @@
+{
+  "name": "keyboard",
+  "description": "键盘控制",
+  "language": "python",
+  "tags": ["keyboard", "control", "utility", "builtin"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "keys": {"type": "string", "description": "按键组合，如 'ctrl+c'"},
+      "hold": {"type": "number", "default": 0.1}
+    },
+    "required": ["keys"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "success": {"type": "boolean"},
+      "pressed": {"type": "string"}
+    }
+  },
+  "created_by": "system"
+}

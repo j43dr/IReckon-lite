@@ -1,0 +1,22 @@
+{
+  "name": "JSON转换器",
+  "description": "JSON格式化、压缩、路径查询、结构转换工具。",
+  "language": "python",
+  "tags": [
+    "json",
+    "transform",
+    "utility",
+    "builtin"
+  ],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "action": "string",
+      "data": "any"
+    }
+  },
+  "output_schema": {
+    "type": "any"
+  },
+  "created_by": "system"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "catgirl",
+  "role_mapping": {
+    "assistant": {"avatar": "🤖"}
+  }
+}

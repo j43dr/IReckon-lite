@@ -1,0 +1,22 @@
+{
+  "name": "volume",
+  "description": "音量控制 - 跨平台通用",
+  "language": "python",
+  "tags": ["volume", "audio", "system", "utility", "builtin", "cross-platform"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "action": {"type": "string", "enum": ["get", "set", "up", "down", "mute", "unmute"], "description": "动作"},
+      "level": {"type": "number", "minimum": 0, "maximum": 100, "description": "音量(0-100)"}
+    },
+    "required": ["action"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "success": {"type": "boolean"},
+      "level": {"type": "number"}
+    }
+  },
+  "created_by": "system"
+}

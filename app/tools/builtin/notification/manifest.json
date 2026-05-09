@@ -1,0 +1,22 @@
+{
+  "name": "notification",
+  "description": "系统通知 - 跨平台通用",
+  "language": "python",
+  "tags": ["notification", "alert", "system", "utility", "builtin", "cross-platform"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "title": {"type": "string", "description": "标题"},
+      "message": {"type": "string", "description": "内容"},
+      "sound": {"type": "boolean", "default": true}
+    },
+    "required": ["message"]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "success": {"type": "boolean"}
+    }
+  },
+  "created_by": "system"
+}

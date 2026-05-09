@@ -1,0 +1,239 @@
+# =============================================================================
+# IReckon Unified Configuration
+# =============================================================================
+
+# ─── General ──────────────────────────────────────────────────────────────────
+verbose: true
+debug: false
+log_level: INFO
+
+# ─── Personality ──────────────────────────────────────────────────────────────
+personality:
+  name: IReckon
+  version: 3.0-lite
+  description: "IReckon: self-evolving AI with a human-like cognitive core."
+  author: "IReckon Foundation"
+
+# ─── Execution / Sandbox ──────────────────────────────────────────────────────
+execution:
+  sandbox_mode: false
+  sandbox:
+    timeout: 30
+    memory_limit_mb: 512
+    cpu_limit: 1.0
+    network_access: false
+    engine: subprocess
+    image: ""
+  local:
+    allowed_modules:
+      - math
+      - json
+      - csv
+      - re
+      - collections
+      - itertools
+      - fractions
+      - decimal
+      - random
+      - statistics
+      - string
+      - hashlib
+      - base64
+      - datetime
+      - time
+      - typing
+      - functools
+      - operator
+      - pathlib
+      - textwrap
+      - difflib
+      - uuid
+      - bisect
+      - heapq
+      - array
+      - enum
+      - copy
+      - pprint
+      - dataclasses
+      - inspect
+      - logging
+    max_code_length: 100000
+
+# ─── Security ──────────────────────────────────────────────────────────────────
+security:
+  filter_level: strict
+  scan_depth: deep
+  mining_detection: true
+  code_scan: true
+  sandbox_enabled: false
+  allowed_commands:
+    - ls
+    - pwd
+    - echo
+    - cat
+    - head
+    - tail
+    - wc
+    - sort
+    - uniq
+    - grep
+    - find
+    - which
+    - python
+    - pip
+    - git
+    - mkdir
+    - cp
+    - mv
+    - rm
+    - chmod
+    - touch
+    - date
+    - whoami
+    - uname
+    - df
+    - du
+    - ps
+    - kill
+    - sleep
+  blocked_commands:
+    - sudo
+    - su
+    - passwd
+    - chown
+    - mount
+    - umount
+    - fdisk
+    - dd
+    - mkfs
+    - iptables
+    - systemctl
+    - service
+    - reboot
+    - shutdown
+    - init
+    - halt
+    - poweroff
+    - nc
+    - ncat
+    - netcat
+    - socat
+    - wget
+    - curl
+    - ssh
+    - scp
+    - ftp
+    - telnet
+    - nmap
+    - masscan
+    - sqlmap
+    - nikto
+    - hydra
+    - john
+    - hashcat
+    - aircrack-ng
+    - bettercap
+    - ettercap
+    - tcpdump
+    - wireshark
+    - dsniff
+    - metasploit
+    - msfconsole
+    - msfvenom
+
+# ─── LLM ──────────────────────────────────────────────────────────────────────
+llm:
+  provider: openai
+  model: gpt-4
+  temperature: 0.7
+  max_tokens: 4096
+  api_key: "${OPENAI_API_KEY}"
+
+  openai:
+    model: gpt-4
+    max_tokens: 4096
+
+  deepseek:
+    model: deepseek-coder
+    api_key: "${DEEPSEEK_API_KEY}"
+
+  ollama:
+    model: llama3
+    host: localhost
+    port: 11434
+
+# ─── Tools ────────────────────────────────────────────────────────────────────
+tools:
+  code_execution:
+    timeout: 30
+    max_output_length: 10000
+    sandbox_enabled: false
+
+  shell:
+    timeout: 30
+    allowed_commands:
+      - ls
+      - pwd
+      - echo
+      - cat
+      - python
+      - pip
+      - git
+
+# ─── Database ──────────────────────────────────────────────────────────────────
+database:
+  path: "data/ireckon.db"
+  pool_size: 5
+  backup_interval: 3600
+
+# ─── Vector Store ─────────────────────────────────────────────────────────────
+vector_store:
+  path: "data/vectors"
+  dimension: 768
+  index_type: flat
+
+# ─── Learning ──────────────────────────────────────────────────────────────────
+learning:
+  enabled: true
+  idle_loop_interval: 300
+  max_sources_per_cycle: 10
+  review_threshold: 0.8
+
+# ─── Exploration ──────────────────────────────────────────────────────────────
+exploration:
+  enabled: true
+  max_hypotheses: 10
+  experiment_timeout: 60
+
+# ─── Dreams ──────────────────────────────────────────────────────────────────
+dreams:
+  enabled: true
+  protocol: cognitive
+  compression_ratio: 0.5
+
+# ─── World Model ──────────────────────────────────────────────────────────────
+world_model:
+  enabled: true
+  update_interval: 60
+  persistence: data/world_model.pkl
+
+# ─── Identity ──────────────────────────────────────────────────────────────────
+identity:
+  enabled: true
+  persistence: data/identity.json
+  platforms:
+    - vrchat
+    - qq
+    - minecraft
+    - web
+
+# ─── Memory ──────────────────────────────────────────────────────────────────
+memory:
+  enabled: true
+  short_term_size: 100
+  long_term_path: data/memory.db
+
+# ─── Plugin ──────────────────────────────────────────────────────────────────
+plugins:
+  enabled: false
+  directory: plugins

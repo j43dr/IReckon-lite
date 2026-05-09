@@ -1,0 +1,337 @@
+                    GNU AFFERO GENERAL PUBLIC LICENSE
+                       Version 3, 19 November 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc.
+  <https://www.fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+                            Preamble
+
+  The GNU Affero General Public License is a free, copyleft license for
+software, specifically designed to ensure cooperation with the community in
+the case of network server software.
+
+  The licenses for most programs and libraries are designed to take
+away your freedom to share and change the program.  By contrast, the GNU
+Affero General Public License is intended to guarantee your freedom to
+share and change all versions of a program--to make sure it remains free
+software for all its users.  We, the Free Software Foundation, use the
+GNU Affero General Public License for most of our software; it applies
+also to any other work released this way by its authors.  You can apply
+it to your programs, too.
+
+  When we speak of free software, we are referring to freedom, not
+price.  Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+them if you wish), that you receive source code or can get it if you
+want it, that you can change the software or use pieces of it in new
+free programs, and that you know you can do these things.
+
+  Developers that use the GNU AGPL protect users' freedom to change
+the software: the system will work for users as long as they allow the
+community to remix and redistribute the work.  However, in return we are
+required to make available, to the community, the source code of any work
+that we distribute through a network server, so that users can easily
+modify and redistribute the server's output.
+
+  Note that this License is expressly designed for use with
+network server software, and that you may not be able to load and run
+any program that you create with this License and distribute over a
+network, except if the recipient also runs the program as modified
+by you.
+
+  Additional terms under this License will be listed in the NOTICE
+file of each relevant file, and will be considered as included in
+the License for all users under the terms of that file.
+
+  Additionally, other works may be provided under this License.
+
+  If you modify the Program, or any covered work, and you grant a
+recipient a perpetual, non-exclusive, royalty-free, worldwide license
+to use, modify, and distribute such work in source and object code
+form, then you must either (1) cause the modified source to offer the
+recipient the source code of your changes and any additional rights you
+granted beyond this License, or (2) arrange to make your changes and any
+additional rights you granted beyond this License available to
+recipients in a more permissive manner.
+
+  The source code of a work means the preferred form the work makes
+for modifications to it.  Object code form means an all-bits-correct
+representation of the source code for use as input to any assembler,
+compiler, linker, or processor to produce object code.
+
+  A "Standard Interface" means an interface that either is an official
+standard defined by a recognized standards body, or, in the case of
+interfaces specified for a particular programming language, one that is
+widely used among developers working in that language.
+
+  The "System Libraries" of an executable work mean anything other than
+the work as a whole, or any part or derivative of the Program or
+Derivative Works thereof, that is included in the executable, or any
+other work which has a substantially similar purpose or function.
+System Libraries are excluded from the Corresponding Source, except
+that they must be included in the work in conjunction with the Program.
+
+  "Corresponding Source" of a work means the Corresponding Source for
+the work, or a work containing the Program or a portion of it, either
+verbatim or with modifications and/or translated into another language.
+
+  "You" means an individual or entity exercising rights under this
+License.
+
+  "Modified Work" means any work based on the Program, or any portion
+of the Program, wherein the modifications were made, in whole or in
+part, by You.
+
+  "Larger Work" means a work that combines the Program, or any
+portion of it, with other code not governed by the terms of this
+License.
+
+  See the NOTICE file for details.
+
+  Additionally, if you include, or cause to include, a copy of the
+Corresponding Source of any works that you cause to be linked with
+the Program in the course of using the network, you must make
+available to users of your network service the Corresponding Source
+of each such work.  This requirement is in addition to the requirement
+that you must provide source code of your modifications to any user
+of your network service, if you have provided such source code to
+the network service.
+
+  You may place additional permissions on material, added by You to a
+Covered Work, for which You have, or can give, appropriate copyright
+permission.
+
+  Notwithstanding any other provision of this License, if You modify
+the Program, Your modifications, and any Derivative Works of the
+Program, may be distributed to Recipients and subject to additional
+permissions, as set forth in Section 5 (including modifications and
+any Derivative Works) must be made available to any and all users, and
+Your network service must provide a copy of the Corresponding Source
+of such modifications and Derivative Works to all users, via the same
+network address or method by which your network service provides
+copies of other users' works, freely available, without charge, and
+under the terms of this License.
+
+  You are not required to accept this License in order to receive or
+run a copy of the Program.  However, the Program is licensed to you
+on a royalty-free basis, and only this License will give You legal
+permission to modify or distribute the Program or Derivative Works.
+Any other distribution is prohibited by law; by distributing the Program
+or the Corresponding Source to others, You accept the terms of this
+License.
+
+  If you modify the Program, or any covered work, and you distribute
+such work in source or object code form, You must make available the
+source code of any Derivative Works of the Program that You distribute,
+along with all source code that You can find a way to associate with
+the Program, in the standard manner described above, in addition to
+the requirements of Sections 4 and 5.
+
+  If You distribute, or offer to distribute, a "work that uses the
+Library" (as defined in Section 1), and the Library is licensed under
+the terms of this License, but the Library is included in a larger
+work that is a "Larger Work" (as defined in Section 1), then any
+source code of the larger work must also be made available under the
+terms of this License.
+
+  If the Larger Work is a combination of the Program with code not
+governed by the terms of this License, You must either (1) cause the
+Larger Work to be made available in source code form under the terms
+of this License, and make available under the terms of this License
+all source code for the Larger Work, or (2) arrange to prohibit
+distribution of the Larger Work except under this License, and offer
+the parties who would distribute the Larger Work a source code copy
+on a medium no more expensive than the one You used for the work
+itself, under the terms of this License, including all source code
+for all parts of the Larger Work (which may be redistributable at
+no charge), and inform each recipient as set forth in Section 5 how
+to obtain such source code.
+
+  If you distribute any covered work in a country where the laws
+prevent distribution of such source code under the terms of this
+License or your rights under this License, You may distribute the
+covered work in that country, or you may modify the covered work
+to make it legal under such laws, subject to the terms of this
+License.
+
+  You may not modify, sublicense, or distribute the Program or
+Derivative Works except as expressly provided under this License.
+Any attempt otherwise to sublicense, or distribute the Program is
+void, and will automatically terminate your rights under this License.
+However, parties who have received copies, or rights, from you under
+this License will not have their licenses terminated so long as such
+parties remain in full compliance.
+
+  You are not required to accept this License, since you have not
+signed it.  However, nothing else grants you permission to modify or
+distribute the Program or its derivative works.  These actions are
+prohibited by law if you do not accept this License.  Therefore, by
+modifying or distributing the Program (or any work based on the
+Program), you indicate your acceptance of this License to do so,
+and all its terms and conditions.
+
+  If any portion of this section is held invalid or unenforceable under
+any particular circumstance, the balance of the section is intended to
+apply and the section as a whole is intended to apply in other
+circumstances.
+
+  It is not the purpose of this section to induce You to infringe any
+patents or other property right claims or to contest validity of any
+such claims; this section has the sole purpose of protecting the
+integrity of the free software distribution system, which is
+implemented by public license practices.  Many people have made
+generous contributions to the wide range of software distributed
+through that system in reliance on consistent application of that
+system; it is up to the author/donor to decide if he or she is willing
+to distribute software through any other system and a license cannot
+impose that choice.
+
+  This section is intended to make thoroughly clear what is believed
+by the author to be a consequence of the rest of this License.
+
+  If the distribution and/or use of the Program is restricted in a
+country from which distribution is not allowed under applicable law, then
+the original licensee may add an explicit geographical distribution
+limitation excluding such country, so that distribution is permitted
+only in or among countries not thus excluded.  In such case, this
+License incorporates the limitation as if written in the body of
+this License.
+
+  Additional definitions.  As used herein, "this License" refers to
+version 3 of the GNU Affero General Public License, and "this License"
+includes any later versions.
+
+  Additional permissions.  Additional permissions are terms that supplement
+the terms of this License by making exceptions from one or more of its
+conditions.  Additional permissions that are applicable to the entire
+Program shall be included in this License, except as otherwise noted,
+in the NOTICE file, and will be considered as included in the License
+for all users under the terms of that file.  Additional permissions
+may be written to allow a later license instead, as a special exception.
+
+  Additional definitions.  As used herein, "this License" refers
+to version 3 of the GNU Affero General Public License, and "this
+License" includes any later versions.
+
+  Additional permissions.  Additional permissions are terms that
+supplement the terms of this License by making exceptions from one
+or more of its conditions.  Additional permissions that are applicable
+to the entire Program shall be included in this License, except as
+otherwise noted, in the NOTICE file, and will be considered as included
+in the License for all users under the terms of that file.
+
+  Additional permissions may be written to allow a later license
+instead, as a special exception.
+
+  No source code bundling.  The Program may be linked with code
+included in the same executable, but the linking must allow users of the
+executable to make modifications to the code in the executable and to
+redistribute the executable with such modifications, without requiring
+the source code of the executable to be made available.  Section 5
+requires that all modifications you make to the executable and any
+Derivative Works thereof be made available in source code form as set
+forth above.
+
+  This License is specifically intended to not require any other
+license for the code that you would combine with or link to this
+Program.
+
+  To comply with these requirements, place a notice in a conspicuous
+location within each Derivative Work you distribute, and within
+the corresponding source code, that includes a notice stating that
+the work is governed by this License, and including this License.
+
+  Additional definitions.  As used herein, "this License" refers
+to version 3 of the GNU Affero General Public License, and "this
+License" includes any later versions.
+
+  Additional permissions.  Additional permissions are terms that
+supplement the terms of this License by making exceptions from one
+or more of its conditions.  Additional permissions that are applicable
+to the entire Program shall be included in this License, except as
+otherwise noted, in the NOTICE file, and will be considered as included
+in the License for all users under the terms of that file.
+
+  Additional permissions may be written to allow a later license
+instead, as a special exception.
+
+  No source code bundling.  The Program may be linked with code
+included in the same executable, but the linking must allow users
+of the executable to make modifications to the code in the executable
+and to redistribute the executable with such modifications, without
+requiring the source code of the executable to be made available.
+Section 5 requires that all modifications you make to the executable
+and any Derivative Works thereof be made available in source code form
+as set forth above.
+
+  This License is specifically intended to not require any other
+license for the code that you would combine with or link to this
+Program.
+
+  To comply with these requirements, place a notice in a conspicuous
+location within each Derivative Work you distribute, and within
+the corresponding source code, that includes a notice stating that
+the work is governed by this License, and including this License.
+
+  NO WARRANTY
+
+  BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO
+WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE
+LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT
+WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING,
+BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS TO THE
+QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE
+PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY
+SERVICING, REPAIR OR CORRECTION.
+
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN
+WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY
+MODIFY AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE
+LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL,
+INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR
+INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU
+OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY
+OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+  END OF TERMS AND CONDITIONS
+
+  IReckon - AI Agent System
+  Copyright (C) 2026
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  GNU Affero General Public License for more details.
+
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+  Also add information on how to contact you by electronic and paper mail.
+
+  If the program does terminal interaction, make it output a short
+  notice like this when it starts in an interactive mode:
+
+    IReckon  Copyright (C) 2026
+    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details.
+
+  The hypothetical commands `show w' and `show c' should show the appropriate
+  parts of the General Public License.  Of course, the program's commands
+  might be different; for a GUI interface, you would use an "about box".
+
+  You should also get your employer (if you work as a programmer) or school,
+  if any, to sign a "copyright disclaimer" for the program, if necessary.
+  For more information on this, and how to apply and follow the GNU AGPL, see
+  <https://www.gnu.org/licenses/>.

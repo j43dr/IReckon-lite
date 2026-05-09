@@ -1,0 +1,22 @@
+{
+  "name": "termux_sensors",
+  "description": "传感器 - Android传感器 (通用)",
+  "language": "python",
+  "tags": ["sensor", "android", "termux", "utility", "builtin", "cross-platform"],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "sensor": {"type": "string", "enum": ["accelerometer", "gyroscope", "magnetic", "light", "proximity", "all"], "default": "all"}
+    }
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "success": {"type": "boolean"},
+      "x": {"type": "number"},
+      "y": {"type": "number"},
+      "z": {"type": "number"}
+    }
+  },
+  "created_by": "system"
+}

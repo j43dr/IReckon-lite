@@ -1,0 +1,23 @@
+{
+  "name": "哈希加密工具箱",
+  "description": "支持MD5、SHA1、SHA256、SHA512、AES、RSA等加密算法。",
+  "language": "python",
+  "tags": [
+    "hash",
+    "encrypt",
+    "security",
+    "builtin"
+  ],
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "action": "string",
+      "data": "string",
+      "algorithm": "string"
+    }
+  },
+  "output_schema": {
+    "type": "any"
+  },
+  "created_by": "system"
+}

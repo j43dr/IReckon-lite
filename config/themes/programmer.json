@@ -1,0 +1,6 @@
+{
+  "name": "programmer",
+  "role_mapping": {
+    "assistant": {"avatar": "💻"}
+  }
+}
